@@ -1,6 +1,8 @@
 # groonga-dev-search
 
-A full-text search tool for groonga-dev mailing list.
+A full-text search tool for [groonga-dev][] mailing list.
+
+[groonga-dev]:http://lists.sourceforge.jp/mailman/listinfo/groonga-dev
 
 ## Usage
 
