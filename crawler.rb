@@ -4,7 +4,7 @@ require "fileutils"
 require "net/http"
 require "uri"
 
-require "./common"
+require "./config"
 
 FileUtils.mkdir_p("data")
 
