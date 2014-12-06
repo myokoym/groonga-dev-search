@@ -45,5 +45,4 @@ Dir.glob("#{DATA_DIR}/*") do |path|
       end
     end
   end
-  exit
 end
