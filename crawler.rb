@@ -13,7 +13,7 @@ YEARS.product(MONTHS) do |pair|
   basename = "#{year}-#{month}.txt"
   output_path = File.join(DATA_DIR, basename)
   if File.exist?(output_path)
-    $stderr.puts("#{basename} is already exists.")
+    $stderr.puts("#{basename} already exists.")
     next
   end
 
