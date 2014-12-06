@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    archive-zip (0.7.0)
+      io-like (~> 0.3.0)
+    gqtp (1.0.6)
+    grn_mini (0.6.0)
+      rroonga
+    groonga-client (0.1.0)
+      gqtp (>= 1.0.4)
+      groonga-command (>= 1.0.8)
+    groonga-command (1.0.9)
+      json
+    io-like (0.3.0)
+    json (1.8.1)
+    pkg-config (1.1.6)
+    rroonga (4.0.6)
+      archive-zip
+      groonga-client (>= 0.0.3)
+      json
+      pkg-config
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  grn_mini

@@ -16,3 +16,4 @@ MONTHS = [
 ]
 
 DATA_DIR = "data"
+DB_DIR = "db"
