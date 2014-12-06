@@ -6,12 +6,12 @@ require "uri"
 
 require "./config"
 
-FileUtils.mkdir_p("data")
+FileUtils.mkdir_p(DATA_DIR)
 
 YEARS.product(MONTHS) do |pair|
   year, month = *pair
   basename = "#{year}-#{month}.txt"
-  output_path = File.join("data", basename)
+  output_path = File.join(DATA_DIR, basename)
   if File.exist?(output_path)
     $stderr.puts("#{basename} is already exists.")
     next
