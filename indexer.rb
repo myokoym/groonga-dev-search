@@ -29,7 +29,7 @@ Dir.glob("#{DATA_DIR}/*") do |path|
           :from    => mail.from,
           :date    => mail.date.to_s,
           :subject => mail.subject,
-          :body    => mail.body.to_s.force_encoding("UTF-8"),
+          :body    => mail.body.to_s.encode("UTF-8", mail.charset),
         }
       else
         text << line
