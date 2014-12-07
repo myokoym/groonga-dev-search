@@ -14,7 +14,6 @@ hash = GrnMini::Hash.new
 Dir.glob("#{DATA_DIR}/*") do |path|
   index_by_month = 0
   basename = File.basename(path, ".txt")
-  year, month = basename.split(/-/)
   File.open(path) do |file|
     text = ""
     file.each_line do |line|
