@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 require "grn_mini"
 require "fileutils"
 require "mail"
@@ -14,7 +16,7 @@ hash = GrnMini::Hash.new
 Dir.glob("#{DATA_DIR}/*") do |path|
   index_by_month = 0
   basename = File.basename(path, ".txt")
-  File.open(path) do |file|
+  File.open(path, "r:utf-8") do |file|
     text = ""
     file.each_line do |line|
       case line
