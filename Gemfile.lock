@@ -9,24 +9,19 @@ GEM
     groonga-client (0.1.0)
       gqtp (>= 1.0.4)
       groonga-command (>= 1.0.8)
-    groonga-command (1.0.9)
+    groonga-command (1.1.1)
       json
     io-like (0.3.0)
-    json (1.8.1)
-    mail (2.5.4)
-      mime-types (~> 1.16)
-      treetop (~> 1.4.8)
-    mime-types (1.25.1)
+    json (1.8.2)
+    mail (2.6.3)
+      mime-types (>= 1.16, < 3)
+    mime-types (2.4.3)
     pkg-config (1.1.6)
-    polyglot (0.3.5)
-    rroonga (4.0.6)
+    rroonga (5.0.0)
       archive-zip
       groonga-client (>= 0.0.3)
       json
       pkg-config
-    treetop (1.4.15)
-      polyglot
-      polyglot (>= 0.3.1)
 
 PLATFORMS
   ruby
