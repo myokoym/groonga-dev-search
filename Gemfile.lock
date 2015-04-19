@@ -9,7 +9,7 @@ GEM
     groonga-client (0.1.0)
       gqtp (>= 1.0.4)
       groonga-command (>= 1.0.8)
-    groonga-command (1.1.1)
+    groonga-command (1.1.2)
       json
     io-like (0.3.0)
     json (1.8.2)
@@ -17,7 +17,7 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
     pkg-config (1.1.6)
-    rroonga (5.0.0)
+    rroonga (5.0.1)
       archive-zip
       groonga-client (>= 0.0.3)
       json
