@@ -1,4 +1,4 @@
-HOST_NAME = "http://sourceforge.jp/"
+HOST_NAME = "http://osdn.jp/"
 BASE_PATH = "projects/groonga/lists/archive/dev/"
 
 YEARS = [
