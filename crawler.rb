@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require "fileutils"
-require "net/http"
+require "net/https"
 require "uri"
 
 require "./config"
@@ -20,8 +20,10 @@ YEARS.product(MONTHS) do |pair|
   uri = URI.parse("#{HOST_NAME}#{BASE_PATH}#{basename}")
   res = nil
   5.times do
-    res = Net::HTTP.start(uri.host, uri.port) do |http|
-      http.get(uri.request_uri)
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = (uri.scheme == 'https')
+    res = http.start do |h|
+      h.get(uri.request_uri)
     end
 
     case res
