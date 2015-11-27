@@ -6,18 +6,18 @@ GEM
     gqtp (1.0.6)
     grn_mini (0.6.0)
       rroonga
-    groonga-client (0.1.0)
+    groonga-client (0.1.9)
       gqtp (>= 1.0.4)
       groonga-command (>= 1.0.8)
-    groonga-command (1.1.2)
+    groonga-command (1.1.3)
       json
     io-like (0.3.0)
-    json (1.8.2)
+    json (1.8.3)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (2.4.3)
+    mime-types (2.99)
     pkg-config (1.1.6)
-    rroonga (5.0.1)
+    rroonga (5.0.9)
       archive-zip
       groonga-client (>= 0.0.3)
       json
@@ -29,3 +29,6 @@ PLATFORMS
 DEPENDENCIES
   grn_mini
   mail
+
+BUNDLED WITH
+   1.10.6
