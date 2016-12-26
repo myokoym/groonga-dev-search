@@ -8,11 +8,19 @@ require "./config"
 
 FileUtils.mkdir_p(DATA_DIR)
 
+latest_file = Dir.glob("#{DATA_DIR}/*").sort_by {|basename|
+  target = basename
+  MONTHS.each do |month|
+    target = target.sub(month, "%02d" % MONTHS.index(month).to_s)
+  end
+  target.scan(/[0-9]+/).join.to_i
+}.last
+
 YEARS.product(MONTHS) do |pair|
   year, month = *pair
   basename = "#{year}-#{month}.txt"
   output_path = File.join(DATA_DIR, basename)
-  if File.exist?(output_path)
+  if File.exist?(output_path) && (output_path != latest_file)
     $stderr.puts("#{basename} already exists.")
     next
   end
