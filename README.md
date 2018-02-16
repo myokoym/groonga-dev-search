@@ -25,6 +25,5 @@ A full-text search tool for [groonga-dev][] mailing list.
 
 ## License
 
-This software is distributed under the zlib license.
+CC0 1.0 Universal (Public Domain)
 
-See LICENSE.txt for details.
